@@ -1,0 +1,8 @@
+FROM k8s.gcr.io/kube-controller-manager
+FROM coredns/coredns  
+FROM k8s.gcr.io/kubernetes-dashboard-amd64 
+FROM k8s.gcr.io/etcd
+FROM ikubernetes/filebeat
+FROM k8s.gcr.io/pause 
+FROM coreos/flannel 
+FROM gcr.io/kubernetes-helm/tiller
